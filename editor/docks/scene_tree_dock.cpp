@@ -1640,6 +1640,10 @@ void SceneTreeDock::_tool_selected(int p_tool, bool p_confirm_override) {
 
 			scene_tree->get_scene_tree()->grab_focus(true);
 		} break;
+		case TOOL_SORT_ASCENDING:
+		case TOOL_SORT_DESCENDING: {
+			// TODO: Add the code here.
+		} break;
 
 		default: {
 			if (p_tool >= EditorContextMenuPlugin::BASE_ID) {
